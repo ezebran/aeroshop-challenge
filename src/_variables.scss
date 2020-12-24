@@ -1,0 +1,57 @@
+// Body
+$body-bg: #f8fafc;
+
+
+// Colors
+
+$gray-bg:#ededed;
+$black-txt: #616161;
+
+@mixin row-bt(){
+	display: flex;
+	flex-flow:wrap row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+@mixin row-ct(){
+	display: flex;
+	flex-flow:wrap row;
+	justify-content:center;
+	align-items:center;
+}
+
+@mixin row-st(){
+	display: flex;
+	flex-flow:wrap row;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+@mixin col-ct(){
+	display: flex;
+	flex-flow:wrap column;
+	justify-content:center;
+	align-items:center;
+}
+
+@mixin col-end(){
+	display: flex;
+	flex-flow:wrap column;
+	justify-content:center;
+	align-items: flex-end;
+}
+
+@mixin col-st(){
+	display: flex;
+	flex-flow:wrap column;
+	justify-content:center;
+	align-items: flex-start;
+}
+
+@mixin row-ar(){
+	display: flex;
+	flex-flow:wrap row;
+	justify-content:space-around;
+	align-items:center;
+}

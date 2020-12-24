@@ -1,0 +1,29 @@
+@import './../../variables';
+
+.header{
+    @include row-bt();
+    padding: 0.5em 2em;
+    .user-info{
+        @include row-bt();
+        font-size: 1.5em;
+        color:$black-txt;
+        .user-coins{
+            @include row-bt();
+            background: $gray-bg;
+            padding: 0.25em 0.75em;
+            border-radius: 100px;
+            margin: 0 1em;
+        }
+        .cart-data{
+            @include row-bt();
+            background: $gray-bg;
+            border-radius: 100px;
+            padding: 0.25em 0.75em;
+            .cart-icon{
+                width: 34px;
+                margin-left: 0.25em;
+            }
+        }
+    }
+
+}
