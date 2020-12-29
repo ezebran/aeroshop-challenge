@@ -1,0 +1,36 @@
+@import './../../../../variables';
+
+.article{
+    background:#fff;
+    box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
+    margin-bottom: 1.5em;
+    padding: 1.25em 1.5em;
+    width: 276px;
+    height: 276px;
+    position: relative;
+    .img-product{
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .category{
+        font-size: 1em;
+        color:$gray-txt;
+    }
+    .name{
+        font-size: 1.25em;
+        color:$black-txt;
+    }
+    .product-price{
+        @include row-bt();
+        position: absolute;
+        right: 12px;
+        // opacity:0.8;
+        background:rgba(97, 97, 97 , 0.6);
+        border-radius:100px;
+        padding: 1px 15px;
+        p{
+            font-size: 14px;
+            color:#fff;
+            margin-right: 0.4em;
+        }
+    }
+}

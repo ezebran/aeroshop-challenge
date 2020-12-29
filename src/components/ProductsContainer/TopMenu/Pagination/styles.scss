@@ -1,0 +1,11 @@
+@import './../../../../variables';
+
+.pagination{
+    @include row-ct();
+    h2{
+        color:$black-txt;
+    }
+    .arrow-right{
+        margin: 0 1.5em 0 0.5em;
+    }
+}

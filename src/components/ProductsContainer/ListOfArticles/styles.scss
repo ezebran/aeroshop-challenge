@@ -1,0 +1,6 @@
+@import './../../../variables';
+
+.list-of-articles{
+    @include row-bt();
+    padding: 0 7%;
+}

@@ -6,7 +6,7 @@ import logo from '../../Static/aerolab-logo.svg';
 import coinIcon from '../../Static/icons/coin.svg';
 import cartEmpty from '../../Static/icons/buy-white.svg';
 
-export default function () {
+const Header = () => {
     const [user, setUser] = useContext(UserContext);
 
     return(
@@ -27,3 +27,5 @@ export default function () {
         </div>
     )
 }
+
+export default Header;

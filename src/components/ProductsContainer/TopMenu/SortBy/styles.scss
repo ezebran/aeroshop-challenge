@@ -1,0 +1,15 @@
+@import './../../../../variables';
+
+.sort-by{
+    @include row-ct();
+    h2{
+        color:$gray-txt;
+        margin-right: 1em;
+    }
+    .css-2b097c-container{
+        width: 9em;
+    }
+    .sort-select{
+        padding: 0.5em;
+    }
+}

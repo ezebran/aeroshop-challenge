@@ -1,0 +1,8 @@
+@import './../../../variables';
+
+.top-menu{
+    @include row-bt();
+    margin: 4em 7% 4em;
+    padding-bottom: 4em;
+    border-bottom: 1px solid $gray;
+}
