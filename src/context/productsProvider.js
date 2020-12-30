@@ -17,17 +17,9 @@ export default ({ children }) =>{
             setArticles(res.data)
         })
         .catch(err => console.error(err))
-    }, [])
+    }, [articles])
 
-    useEffect(() => {
-        if(sort === 'recent'){
-            return articles
-        } else if (sort === 'highest') {
-            return setArticles(articles.sort((a, b) => {return a.cost - b.cost}))
-        } else if (sort === 'lowest') {
-            return setArticles(articles.sort((a, b) => {return b.cost - a.cost}))
-        }
-    }, [sort])
+
 
     return (
             <ProductsContext.Provider value={[[articles, setArticles],[page, setPage],[sort, setSort]]}>
