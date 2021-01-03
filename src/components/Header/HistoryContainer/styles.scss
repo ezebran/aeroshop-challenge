@@ -1,0 +1,21 @@
+@import './../../../variables';
+
+.history-container{
+    position: fixed;
+    background: white;
+    padding: 1em 2em;
+    height: 100vh;
+    z-index: 99;
+    box-shadow:4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+    top: 62px;
+    left: 0;
+    overflow: scroll;
+    h2{
+        color:$black-txt;
+        font-size: 1em;
+    }
+}
+
+.hide-history{
+    left: -445px;
+}

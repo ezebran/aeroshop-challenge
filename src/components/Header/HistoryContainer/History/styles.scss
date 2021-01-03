@@ -1,0 +1,23 @@
+@import './../../../../variables';
+
+.history-item{
+    @include row-bt();
+    border: 1px solid $gray;
+    padding: 0.75em 2em;
+    margin: 1em 0;
+    border-radius: 4px;
+    .img-history{
+        width: 120px;
+    }
+    .info-history{
+        @include col-ct();
+        .category-history{
+            font-size: 16px;
+            color:$gray-txt;
+        }
+        .name-history{
+            font-size: 18px;
+            color:$black-txt;
+        }
+    }
+}

@@ -4,3 +4,11 @@
     @include row-bt();
     padding: 0 7%;
 }
+
+//Responsive
+
+@media screen and (max-width: 780px) { 
+    .list-of-articles{
+        @include col-ct();
+    }
+}

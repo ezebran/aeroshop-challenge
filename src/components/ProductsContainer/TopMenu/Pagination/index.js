@@ -9,10 +9,26 @@ const Pagination = () => {
     const [articles, setArticles] = useContext(ProductsContext)[0];
     const [page, setPage] = useContext(ProductsContext)[1];
     
+    const nextPage = (e) => {
+        e.preventDefault();
+
+        if((page * 16) != articles.length){
+            setPage(page+1)
+        }
+    }
+
+    const previusPage = (e) => {
+        e.preventDefault();
+
+        if(page != 1){
+            setPage(page-1)
+        }
+    }
+
     return(
         <div className="pagination">
-            <a href="#"><img src={ArrowLeft} /></a>
-            <a href="#"><img src={ArrowRight} className="arrow-right" /></a>
+            <a href="#" onClick={previusPage}><img src={ArrowLeft} /></a>
+            <a href="#" onClick={nextPage}><img src={ArrowRight} className="arrow-right" /></a>
             <h2>{16*page} of {articles.length} products</h2>
         </div>
     );

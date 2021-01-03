@@ -7,10 +7,21 @@
     flex-flow: wrap column;
     justify-content: flex-end;
     align-items: flex-start;
+    margin-top: 62px;
+    z-index: 99;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
     .banner-title{
         color:white;
         font-weight: 700;
         font-size: 4em;
         margin: 0 0 2% 7%;
+    }
+}
+
+//Responsive
+
+@media screen and (max-width: 780px) { 
+    .banner{
+        height: 155px;
     }
 }

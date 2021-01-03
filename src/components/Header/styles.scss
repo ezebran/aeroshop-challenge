@@ -3,17 +3,16 @@
 .header{
     @include row-bt();
     padding: 0.5em 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+    z-index: 99;
     .user-info{
         @include row-bt();
         font-size: 1.5em;
         color:$black-txt;
-        .user-coins{
-            @include row-bt();
-            background: $gray-bg;
-            padding: 0.25em 0.75em;
-            border-radius: 100px;
-            margin: 0 1em;
-        }
         .cart-data{
             @include row-bt();
             background: $gray-bg;
@@ -26,4 +25,16 @@
         }
     }
 
+}
+
+//Responsive
+
+@media screen and (max-width: 780px) { 
+    .header{
+        .user-info{
+            .user-name{
+                display: none;
+            }
+        }
+    }
 }

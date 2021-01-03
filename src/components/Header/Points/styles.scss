@@ -1,0 +1,44 @@
+@import './../../../variables';
+
+
+
+.user-coins{
+    @include row-bt();
+    background: $gray-bg;
+    padding: 0.25em 0.75em;
+    border-radius: 100px;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.amounts{
+    @include row-bt();
+    .amount{
+        @include row-bt();
+        background: $gray-bg;
+        padding: 0.25em 0.75em;
+        border-radius: 100px;
+        margin: 0 0.25em;
+        cursor: pointer;
+    }
+    h4{
+        margin-left: 1em;
+    }
+}
+
+.hide-amounts{
+    display: none;
+}
+
+@media screen and (max-width: 780px) { 
+    .amounts{
+        margin: 2em 0;
+        .amount{
+            margin:0;
+            padding: 0.25em 0.25em;
+        }
+        h4{
+            display: none;
+        }
+    }
+}
