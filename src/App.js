@@ -9,11 +9,13 @@ import './App.scss';
 function App() {
   return (
     <>
-    <UserContext>
-      <Header />
-    </UserContext>
-    <Banner />
-    <ProductsContainer />
+    <HistoryContext>
+      <UserContext>
+        <Header />
+      </UserContext>
+      <Banner />
+      <ProductsContainer />
+    </HistoryContext>
     </>
   );
 }

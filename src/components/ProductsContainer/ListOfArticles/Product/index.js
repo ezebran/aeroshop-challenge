@@ -16,7 +16,7 @@ const Product = ({ articles }) => {
         <a href="#" onClick={hideDetails} >
             <article className="article">
                 <UserContext>
-                    <ProductDetails cost={articles.cost} hide={hide} id={articles._id} />
+                    <ProductDetails cost={articles.cost} hide={hide} article={articles} />
                 </UserContext>
                 <div className="product-price">
                     <p>{articles.cost}</p>

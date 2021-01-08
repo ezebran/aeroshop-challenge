@@ -20,10 +20,8 @@ const Header = () => {
             <div className="user-info">
                 <p className='user-name'>Hi, {user.name}!</p>
                 <Points userPoints={user.points} />
-                <HistoryContext>
-                    <HistoryButton />
-                    <HistoryContainer />
-                </HistoryContext>
+                <HistoryButton />
+                <HistoryContainer />
             </div>
         </div>
     )

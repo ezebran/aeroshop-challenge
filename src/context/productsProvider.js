@@ -7,8 +7,8 @@ export default ({ children }) =>{
     const [sort, setSort] = useState('recent');
     const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmRiYmQ3MTI2ZjdkMjAwMjA0MTE0Y2YiLCJpYXQiOjE2MDgyMzY0MDF9.Sl8Cdihvsn-V8gQTDo2pooPS_jF2rFWXZPurX7ersHY';
     
-    useEffect(async () => {
-        await axios.get('https://coding-challenge-api.aerolab.co/products', {
+    useEffect( () => {
+        axios.get('https://coding-challenge-api.aerolab.co/products', {
             headers: {
                 'Authorization':`Bearer ${token}`
             }
@@ -17,7 +17,7 @@ export default ({ children }) =>{
             setArticles(res.data)
         })
         .catch(err => console.error(err))
-    }, [articles])
+    }, [])
 
 
 

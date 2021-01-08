@@ -6,8 +6,8 @@ export default ({ children }) =>{
     
     const [user,setUser] = useState('');
 
-    useEffect(async () => {
-        await axios.get('https://coding-challenge-api.aerolab.co/user/me', {
+    useEffect(() => {
+        axios.get('https://coding-challenge-api.aerolab.co/user/me', {
             headers: {
                 'Authorization':`Bearer ${token}`
             }
